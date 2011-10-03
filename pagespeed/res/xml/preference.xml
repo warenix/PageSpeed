@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/app_name">
+		<ListPreference android:summary=""
+			android:entries="@array/google_pagespeed_strategy_name"
+			android:entryValues="@array/google_pagespeed_strategy_value"
+			android:dialogTitle="@string/strategy" android:title="@string/strategy"
+			android:key="strategy" />
+
+		<ListPreference android:summary=""
+			android:entries="@array/google_pagespeed_locale_list_name"
+			android:entryValues="@array/google_pagespeed_locale_list_value"
+			android:dialogTitle="@string/locale" android:title="@string/locale"
+			android:key="locale" />
+	</PreferenceCategory>
+</PreferenceScreen>

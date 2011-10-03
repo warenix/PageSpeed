@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- UI languages -->
+	<string name="run">分析</string>
+	<string name="running_page_speed">Google Page Speed が実行されて、しばらくお待ちください</string>
+	<string name="info_section">スコア</string>
+	<string name="resource_section">リソースのサイズ</string>
+	<string name="rule_section">ルール</string>
+	<string name="suggestion_section">提案</string>
+	<string name="menu_setting">設定</string>
+	<string name="strategy">戦略</string>
+	<string name="locale">言語</string>
+</resources>

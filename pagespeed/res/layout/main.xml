@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include layout="@layout/logo" />
+	<TextView style="@style/sectionHeader" android:text="@string/info_section"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/black_gradient" />
+	<include layout="@layout/page_info" />
+
+	<TextView style="@style/sectionHeader" android:text="@string/resource_section"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/black_gradient" />
+	<org.dyndns.warenix.widget.WebImage
+		android:id="@+id/statImage" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<TextView style="@style/sectionHeader" android:text="@string/rule_section"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/black_gradient" />
+	<ListView android:id="@+id/ruleResultList"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		style="@android:style/Theme.Light.Panel" />
+
+</LinearLayout>

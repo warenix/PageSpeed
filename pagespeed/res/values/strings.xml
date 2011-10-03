@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">PageSpeed</string>
+	<!-- UI languages -->
+	<string name="run">Run</string>
+	<string name="running_page_speed">Running Google Page Speed. Please wait...</string>
+	<string name="info_section">Score</string>
+	<string name="resource_section">Resource Sizes</string>
+	<string name="rule_section">Rules</string>
+	<string name="suggestion_section">Suggestions</string>
+	<string name="menu_setting">Settings</string>
+	<string name="strategy">Strategy</string>
+	<string name="locale">Locale</string>
+</resources>

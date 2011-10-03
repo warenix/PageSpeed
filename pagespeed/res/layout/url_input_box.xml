@@ -1,0 +1,16 @@
+
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:layout_width="wrap_content" android:id="@+id/logo"
+		android:layout_height="wrap_content" android:src="@drawable/ic_launcher"
+		android:layout_alignParentLeft="true"></ImageView>
+	<Button android:layout_width="wrap_content" android:id="@+id/run"
+		android:layout_alignParentRight="true" android:layout_height="wrap_content"
+		android:text="@string/run">
+	</Button>
+	<EditText android:layout_width="fill_parent" android:hint="http://google.com"
+		android:id="@+id/url" android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/run" android:layout_toRightOf="@id/logo"
+		android:singleLine="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_marginTop="15dip" android:layout_marginBottom="15dip">
+	<org.dyndns.warenix.widget.WebImage
+		android:id="@+id/barImage" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<TextView android:id="@+id/localizedRuleName"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignTop="@id/barImage" android:layout_alignBottom="@id/barImage"
+		android:layout_alignRight="@id/barImage" android:layout_alignLeft="@id/barImage"
+		android:gravity="center_vertical" android:layout_marginLeft="5dip" />
+	<TextView android:id="@+id/ruleScore" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignTop="@id/barImage"
+		android:layout_alignBottom="@id/barImage" android:gravity="center_vertical"
+		android:layout_marginLeft="5dip" android:layout_toRightOf="@id/barImage" />
+</RelativeLayout>
