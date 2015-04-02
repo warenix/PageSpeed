@@ -97,14 +97,18 @@ public class PageSpeedMaster {
 
 		for (int i = 0; i < RuleResult.RULES.length; ++i) {
 
-			// FIXME			    
+			// FIXME
+			if (!ruleResults.has(RuleResult.RULES[i])){
+			    Log.w(LOG_TAG, String.format("missing rule[%s]",RuleResult.RULES[i]));
+			    continue;
+			}
 
 			JSONObject ruleResultJson = ruleResults
 					.getJSONObject(RuleResult.RULES[i]);
 			RuleResult ruleResult = new RuleResult();
 			ruleResult.localizedRuleName = ruleResultJson
 					.getString("localizedRuleName");
-			ruleResult.ruleScore = ruleResultJson.getInt("ruleScore");
+//			ruleResult.ruleScore = ruleResultJson.getInt("ruleScore");
 			ruleResult.ruleImpact = ruleResultJson.getInt("ruleImpact");
 			// Log.d(LOG_TAG, String.format("%s: score:%d impact:%d",
 			// ruleResult.localizedRuleName, ruleResult.ruleScore,
