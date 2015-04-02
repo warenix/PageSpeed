@@ -15,7 +15,8 @@ import org.json.JSONObject;
 import android.util.Log;
 
 public class PageSpeedMaster {
-	static String LOG_TAG = "pagespeedmaster";
+
+    static String LOG_TAG = "pagespeedmaster";
 
 	static String GOOGLE_API_KEY = "";
 
@@ -26,7 +27,7 @@ public class PageSpeedMaster {
 	public static String STRATEGY_MOBILE = "mobile";
 
 	/**
-	 * 
+	 *
 	 * @param url
 	 *            full identified with protocol name, e.g http://google.com
 	 * @param locale
@@ -96,7 +97,7 @@ public class PageSpeedMaster {
 
 		for (int i = 0; i < RuleResult.RULES.length; ++i) {
 
-			// FIXME
+			// FIXME			    
 
 			JSONObject ruleResultJson = ruleResults
 					.getJSONObject(RuleResult.RULES[i]);
@@ -137,7 +138,8 @@ public class PageSpeedMaster {
 							// + parseFormatArgs(resultJson));
 							// FIXME
 							ruleResultHeader
-									.addUrl(parseFormatArgs(resultJson));
+									.addUrl(parseFormatArgs(
+									    resultJson));
 						}
 					} catch (JSONException e) {
 						e.printStackTrace();

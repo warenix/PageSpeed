@@ -6,14 +6,19 @@ import java.util.ArrayList;
 public class RuleResult implements Serializable {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 2320199152648372642L;
 	public String localizedRuleName;
 	public int ruleScore;
 	public int ruleImpact;
 
-	public ArrayList<UrlBlock> urlBlockList = new ArrayList<RuleResult.UrlBlock>();
+	public ArrayList<UrlBlock> urlBlockList = new ArrayList<UrlBlock>();
+
+        public static final String RULE_AVOID_LANDING_PAGE_REDIRECT = "AvoidLandingPageRedirects";
+        public static final String RULE_AVOID_PLUGINS= "AvoidPlugins";
+        public static final String RULE_CONFIGURE_VIEWPORT= "ConfigureViewport";
+        public static final String RULE_ENABLE_GZIP_COMPRESSION= "EnableGzipCompression";
 
 	public static final String RULE_AVOID_BAD_REQUESTS = "AvoidBadRequests";
 	public static final String RULE_AVOID_CSS_IMPORT = "AvoidCssImport";
@@ -40,7 +45,11 @@ public class RuleResult implements Serializable {
 	public static final String RULE_SPECIFY_IMAGE_DIMENSIONS = "SpecifyImageDimensions";
 	public static final String RULE_SPRITE_IMAGES = "SpriteImages";
 
-	public static String RULES[] = { RULE_AVOID_BAD_REQUESTS,
+	public static String RULES[] = { //RULE_AVOID_BAD_REQUESTS,
+                                         RULE_AVOID_LANDING_PAGE_REDIRECT,
+            RULE_AVOID_PLUGINS,
+                                         RULE_CONFIGURE_VIEWPORT,
+                                         RULE_ENABLE_GZIP_COMPRESSION,
 			RULE_AVOID_CSS_IMPORT, RULE_DEFER_PARSING_JAVA_SCRIPT,
 			RULE_INLINE_SMALL_CSS, RULE_INLINE_SMALL_JAVASCRIPT,
 			RULE_LEVERAGE_BROWSER_CACHING,
@@ -58,7 +67,7 @@ public class RuleResult implements Serializable {
 
 	/**
 	 * combine $1 $2... with arguments
-	 * 
+	 *
 	 * @param format
 	 * @param args
 	 * @return
