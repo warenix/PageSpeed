@@ -3,6 +3,7 @@ package org.dyndns.warenix.pagespeed;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Enumeration;
 
@@ -44,7 +45,7 @@ public class PageSpeedMaster {
 
 		String pageSpeedUrl = String.format(
 				GOOGLE_PAGE_SPEED_ONLINE_URL_FORMAT, url, locale, strategy,
-				GOOGLE_API_KEY, getLocalIpAddress());
+				GOOGLE_API_KEY, URLEncoder.encode(getLocalIpAddress(), "utf-8"));
 		Log.d(LOG_TAG, "pageSpeedUrl:" + pageSpeedUrl);
 		String responseString = WebContent.getContent(pageSpeedUrl);
 		// String responseString =
